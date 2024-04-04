@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Page - College Library</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>College Library</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="admin.html">Admin Page</a></li>
+          <li><a href="#">Student Page</a></li>
+          <li><a href="search.html">Search Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="student-info">
+      <div class="container">
+        <div class="student-details">
+          <div class="student-photo">
+            <img src="passport.jpeg" alt="Student Photo">
+          </div>
+          <div class="student-table">
+            <h2>Student Information</h2>
+            <table>
+              <tr>
+                <td><strong>Unique ID:</strong></td>
+                <td>S1234567</td>
+              </tr>
+              <tr>
+                <td><strong>Roll No:</strong></td>
+                <td>12345</td>
+              </tr>
+              <tr>
+                <td><strong>Division:</strong></td>
+                <td>A</td>
+              </tr>
+              <tr>
+                <td><strong>Subject:</strong></td>
+                <td>Computer Science</td>
+              </tr>
+              <tr>
+                <td><strong>Department:</strong></td>
+                <td>Engineering</td>
+              </tr>
+              <tr>
+                <td><strong>Class:</strong></td>
+                <td>First Year</td>
+              </tr>
+              <tr>
+                <td><strong>Address:</strong></td>
+                <td>Address Line 1, Address Line 2, City, State, Zip</td>
+              </tr>
+              <tr>
+                <td><strong>Contact No:</strong></td>
+                <td>+1234567890</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <button onclick="redirectToDashboard()">Dashboard</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 College Library</p>
+    </div>
+  </footer>
+
+  <script>
+    function redirectToDashboard() {
+      // Redirect to the student dashboard page
+      window.location.href = "student_dashboard.html";
+    }
+  </script>
+</body>
+</html>

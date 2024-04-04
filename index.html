@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>College Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .form-group button {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+
+
+  <header>
+    <div class="container">
+      <h1>College Library</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="showHomePage()">Homepage</a></li>
+          <li><a href="admin.html">Admin Page</a></li>
+          <li><a href="student.html">Student Page</a></li>
+          <li><a href="search.html">Search Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="homepageContent" style="display: none;">
+    <section class="hero">
+      <div class="container">
+        <h2>Welcome to the College Library</h2>
+        <p>Explore our vast collection of books and resources.</p>
+        <div class="login">
+          <h3>Login</h3>
+          <form id="loginForm" onsubmit="return loginUser()">
+            <div class="form-group">
+              <input type="text" id="username" placeholder="Username">
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <button type="submit">Student</button><br>
+              <button type="submit">Admin</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h2>Features</h2>
+        <ul>
+          <li>Search and browse our extensive collection of books</li>
+          <li>Borrow and return books online</li>
+          <li>View upcoming events and announcements</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="faculty">
+      <div class="container">
+        <h2>Faculty</h2>
+        <ul>
+          <li>Ashwini Kokate</li>
+          <li>Arati Vyawahare</li>
+          <li>Dipali Pawar</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="books">
+      <div class="container">
+        <h2>Featured Books</h2>
+        <div class="book-list">
+          <div class="book">
+            <img src="book1.jpg" alt="Book 1">
+          </div>
+          <div class="book">
+            <img src="book2.jpg" alt="Book 2">
+          </div>
+          <div class="book">
+            <img src="book3.jpg" alt="Book 3">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 College Library</p>
+    </div>
+  </footer>
+
+  <script>
+    function showHomePage() {
+      document.getElementById("homepageContent").style.display = "block";
+    }
+
+    function loginUser() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Check if the username and password are correct
+      // For demonstration purposes, hardcoded username and password are used
+      if (username === "vedant_dindore" && password === "hulk123") {
+        window.location.href = "student.html"; // Redirect to student page
+        return false; // Prevent form submission
+      } else {
+        alert("Invalid username or password. Please try again.");
+        return false; // Prevent form submission
+      }
+    }
+  </script>
+</body>
+</html>
