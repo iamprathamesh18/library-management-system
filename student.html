@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Page - College Library</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>College Library</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="admin.html">Admin Page</a></li>
+          <li><a href="#">Student Page</a></li>
+          <li><a href="search.html">Search Table</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="student-info">
+      <div class="container">
+        <h2>Student Information</h2>
+        <div class="student-details">
+          <div class="student-photo">
+            <img src="passport.jpeg" alt="Student Photo">
+          </div>
+          <div class="student-details">
+            <p><strong>Unique ID:</strong> S1234567</p>
+            <p><strong>Roll No:</strong> 12345</p>
+            <p><strong>Division:</strong> A</p>
+            <p><strong>Subject:</strong> Computer Science</p>
+            <p><strong>Department:</strong> Engineering</p>
+            <p><strong>Class:</strong> First Year</p>
+            <p><strong>Address:</strong> Address Line 1, Address Line 2, City, State, Zip</p>
+            <p><strong>Contact No:</strong> +1234567890</p>
+          </div>
+        </div>
+        <button onclick="redirectToDashboard()">Dashboard</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 College Library</p>
+    </div>
+  </footer>
+
+  <script>
+    function redirectToDashboard() {
+      // Redirect to the student dashboard page
+      window.location.href = "student_dashboard.html";
+    }
+  </script>
+</body>
+</html>
