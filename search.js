@@ -8,9 +8,9 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
   function searchBooks(query) {
     // Perform book search based on query (dummy data for demonstration)
     let books = [
-      { title: 'Book 1', author: 'Author 1', edition: '1st Edition' },
-      { title: 'Book 2', author: 'Author 2', edition: '2nd Edition' },
-      { title: 'Book 3', author: 'Author 3', edition: '3rd Edition' }
+      { title: 'digital circuits', author: 'technical publication', edition: '1st Edition' },
+      { title: 'electronic circuit', author: 'tech neo ', edition: '2nd Edition' },
+      { title: 'engineering mathematics 3', author: 'wesley publication', edition: '3rd Edition' }
     ];
   
     return books.filter(book =>
